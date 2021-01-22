@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous">
+
+    </script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> -->
+    <link href='https://css.gg/close-o.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header-text">
+                <div id="hotel-name" class="hotel-name" >
+                    <span id="H" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">H</span>
+                    <span id="O" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">O</span>
+                    <span id="T" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">T</span>
+                    <span id="E" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">E</span>
+                    <span id="L" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">L</span>
+                </div>
+            </div>
+            <div class="header-nav" id="header-nav-bar">
+            <button class="button" onclick="clickFunction()">HOME</button>
+            <button class="button">ABOUT US</button>
+            <button class="button">PHOTOS</button>
+            <button class="button">APARTAMENTS</button>
+            <button class="button">ABOUT FOOD</button>
+            <button class="button">CONTACT</button>
+            <a  class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+        </div>
+        <div id="mainView" class="mainView">
+            <h1 class="viewText">HERE IS THE MODERN SERVICES</h1>
+        </div>
+        <div class="image-container">
+            <div class="image-div">
+                <img class="image" src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg" alt="">
+                <div class="information-text-div">
+                    <h class="information-text">It is a long established fact that a reader will b
+                        e distracted by th
+                        e readable content of a page when lo
+                        oking at its layout. The point of using Lorem Ipsum 
+                        is that it has 
+                        a more-or-less normal distribution of letters, 
+                        as opposed to
+                         using 'Content here, content here',
+                    </h>
+                </div>
+            </div>
+            <div class="image-div">
+                <img class="image" src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg" alt="">
+                <div class="information-text-div">
+                    <h class="information-text"> e distracted by th
+                        e readable content of a page when lo
+                        oking at its layout. The point of using Lorem Ipsum 
+                        is that it has 
+                        a more-or-less normal distribution of letters, 
+                        as opposed to
+                    </h>
+                </div>
+            </div>
+            <div class="image-div">
+                <img class="image" src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg" alt="">
+                <div class="information-text-div">
+                    <h class="information-text"> e distracted by th
+                        e readable content of a page when lo
+                        oking at its layout. The point of using Lorem Ipsum 
+                        is that it has 
+                        a more-or-less normal distribution of letters, 
+                        as opposed to
+                    </h>
+                </div>
+            </div>
+            
+        </div>
+        <form class="form" id=:comment-form>
+        <div class="review" id="review-div">
+            <h1 class="leave-comment">Please leave a comment</h1>
+            <div class="text-area-div">
+            <textarea type="text" name="review" class="review-input" id="text-area"></textarea>
+            </div>
+            <div class="button-div">
+            <button id="comment-button" class="comment-button">Add Comment</button>
+            </div>
+        </div>
+        </form>
+        <div class="review-comments-div" id="review-comments-div"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
